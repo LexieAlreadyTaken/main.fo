@@ -7,4 +7,4 @@ clusters = ['pl', 'pr', 'ps', 'ts', 'ch', 'kl', 'kr', 'ks', 'bl', 'br', 'bz', 'd
 'gl', 'gr', 'gz', 'sp', 'st', 'sk', 'sm', 'sn', 'sl', 'shr', 'shl']
 c = consonants + clusters + ['']
 v = vowels + diphthongs
-e = endings + ['']
+e = [i+'.' for i in endings + ['']]
