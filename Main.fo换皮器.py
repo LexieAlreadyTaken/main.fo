@@ -30,9 +30,9 @@ def hashword(w, depth=5, syls=2):
     res = ""
     ww = wordvalue(w)
     for i in range(syls):
-        res += hashsyl(ww%DICLEN, depth) + '.'
+        res += hashsyl(ww%DICLEN, depth)
         ww = math.floor(ww/DICLEN)
-    return res[:-1]
+    return res
 
 i = 1
 while i==1:
